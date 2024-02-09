@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root xmlns="http://www.informatica.com/Parameterization/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema" version="2.0">
+    <project name="BDO_LMS_MERGE">
+        <workflow name="W_m_LNRCVFCDU4_merge">
+            <parameter name="SRC_FPATH_ICBS">/mnt/Staging/LMS/Report/Input/ICBS</parameter>
+            <parameter name="SRC_FNAME_ICBS">LNRCVPESO4_ICBS.TXT</parameter>
+            <parameter name="SRC_FPATH_TDH">/mnt/Staging/LMS/Report/Input/Transact</parameter>
+            <parameter name="SRC_FNAME_TDH">LNRCVPESO4.csv</parameter>
+            <parameter name="TGT_FPATH">/mnt/Staging/LMS/Report/Output/Merge_File</parameter>
+            <parameter name="TGT_FNAME">LNRCVPESO4</parameter>
+            <parameter name="SRC_FPATH_audit">/mnt/Staging/LMS/Report/Input</parameter>
+            <parameter name="SRC_FNAME_audit">FF_Audit_log.txt</parameter>
+            <parameter name="TGT_FNAME_audit">MERGE_AUDIT_LOG.TXT</parameter>
+            <parameter name="ADT_FPATH_SUCCESS">/mnt/Staging/LMS/Report/Output/Audit_Success</parameter>
+            <parameter name="alert_recipient">BDOLMSAIATeam@CognizantOnline.onmicrosoft.com</parameter>
+            <parameter name="scriptpath">/mnt/Staging/LMS/Scripts</parameter>
+            <parameter name="ADT_FPATH_FAILURE">/mnt/Staging/LMS/Report/Output/Audit_Failure</parameter>
+            <parameter name="ARCH_PATH_ICBS">/mnt/Staging/LMS/Report/Input/Archive/ICBS</parameter>
+            <parameter name="ARCH_PATH_TDH">/mnt/Staging/LMS/Report/Input/Archive/Transact</parameter>
+            <parameter name="TGT_EXTENSION">.TXT</parameter>
+        </workflow>
+    </project>
+</root>
